@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya | Rahmatia A.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Portofolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#certificates">Sertifikat</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+<section id="home" class="hero">
+    <!-- Canvas untuk particle -->
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="hero-content">
+        <div class="avatar-container">
+            <div class="avatar-ring"></div>
+            <img src="images/foto-profil-jpg.jpeg" alt="Foto Saya" class="avatar">
+        </div>
+
+        <h1 class="hero-title">Halo, Saya <span class="highlight">Rahmatia A.</span></h1>
+        
+        <!-- Tagline yang lebih personal -->
+        <p class="hero-subtitle" id="typing-text"></p>
+
+        <!-- Currently Learning -->
+        <div class="currently-learning">
+            <span class="learning-label">Currently learning:</span>
+            <span class="learning-items">
+                <span>Arduino Advanced</span>
+                <span>ESP32 & IoT</span>
+                <span>Embedded C++</span>
+            </span>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">Lihat Proyek</a>
+            <a href="#contact" class="btn secondary">Hubungi Saya</a>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <span></span>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Halo! Saya adalah seorang siswa jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki ketertarikan besar terhadap dunia teknologi, pemrograman, dan elektronika.
+
+                    </p>
+                    <p>
+                        Saya senang belajar hal baru, memecahkan masalah teknis, dan menciptakan solusi sederhana yang bermanfaat. 
+                        Portofolio ini menampilkan perjalanan belajar saya beserta beberapa karya yang pernah saya buat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+    <!-- Skill 1 -->
+    <div class="skill-card">
+        <div class="skill-header">
+            <i class="fas fa-microchip"></i>
+            <h3>Arduino & Embedded</h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" data-percent="90"></div>
+        </div>
+        <span class="percent-text">90%</span>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="skill-card">
+        <div class="skill-header">
+            <i class="fas fa-code"></i>
+            <h3>Pemrograman C/C++</h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" data-percent="85"></div>
+        </div>
+        <span class="percent-text">85%</span>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="skill-card">
+        <div class="skill-header">
+            <i class="fas fa-wifi"></i>
+            <h3>IoT & ESP32</h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" data-percent="80"></div>
+        </div>
+        <span class="percent-text">80%</span>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="skill-card">
+        <div class="skill-header">
+            <i class="fas fa-tools"></i>
+            <h3>Hardware & Troubleshooting</h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" data-percent="88"></div>
+        </div>
+        <span class="percent-text">88%</span>
+    </div>
+
+    <!-- Skill 5 -->
+    <div class="skill-card">
+        <div class="skill-header">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Problem Solving</h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" data-percent="92"></div>
+        </div>
+        <span class="percent-text">92%</span>
+    </div>
+
+    <!-- Skill 6 -->
+    <div class="skill-card">
+        <div class="skill-header">
+            <i class="fas fa-users"></i>
+            <h3>Kerja Tim & Presentasi</h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" data-percent="78"></div>
+        </div>
+        <span class="percent-text">78%</span>
+    </div>
+</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyek Arduino</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project-01.jpeg" alt="Proyek 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sensor suhu</h3>
+                        <p>Sistem pengontrolan suhu dan kelembapan pada ruangan.</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                            <span>Sensor</span>
+                            <span>LCD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project-2.jpeg" alt="Proyek 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Radar System</h3>
+                        <p>Mendeteksi objek sekitar, jarak dekat</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                            <span>LCD</span>
+                            <span>Sensor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project-3.jpeg" alt="Proyek 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tempat Sampah Otomatis</h3>
+                        <p>Tempat sampah yang bisa membuka secara otomatis menggunakan sensor</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                            <span>Motor</span>
+                            <span>IR Sensor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (contoh tambahan) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/project4.jpg" alt="Proyek 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Alarm Kebakaran Sederhana</h3>
+                        <p>Menggunakan sensor asap/gas MQ-2 + buzzer dan LED sebagai peringatan dini.</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                            <span>MQ-2</span>
+                            <span>Buzzer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <<!-- Certificates Section -->
+<section id="certificates" class="section certificates-section">
+    <div class="container">
+        <h2 class="section-title">Sertifikat & Piagam</h2>
+        <p class="section-subtitle">Beberapa penghargaan dan partisipasi yang pernah saya raih</p>
+
+        <div class="certificates-grid">
+
+            <!-- Sertifikat 1 - Medali Emas FOSNAS -->
+            <div class="cert-card" onclick="openLightbox('assets/certificates/sertifikat1.jpg', 'Peraih Medali Emas - OSN-AT 2026')">
+                <div class="cert-img">
+                    <img src="images/cerificate-03.jpeg" alt="Medali Emas FOSNAS 2026">
+                    <div class="cert-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Klik untuk perbesar</span>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-badge gold">Medali Emas</span>
+                    <h3>Olimpiade Sains Nasional - Awal Tahun (OSN-AT) 2026</h3>
+                    <p>Bidang IPS • Predikat A+</p>
+                    <span class="cert-date">4 Januari 2026 • Sumatera Utara</span>
+                </div>
+            </div>
+
+            <!-- Sertifikat 2 - Medali Emas PRESMANESIA -->
+            <div class="cert-card" onclick="openLightbox('assets/certificates/sertifikat2.jpg', 'Peraih Medali Emas - KSN-AT 2025')">
+                <div class="cert-img">
+                    <img src="images/certificate-02.jpeg" alt="Medali Emas PRESMANESIA 2025">
+                    <div class="cert-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Klik untuk perbesar</span>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-badge gold">Medali Emas</span>
+                    <h3>Kejuaraan Sains Nasional - Akhir Tahun 2025</h3>
+                    <p>Bidang IPS • Predikat A+</p>
+                    <span class="cert-date">28 Desember 2025 • Yogyakarta</span>
+                </div>
+            </div>
+
+            <!-- Sertifikat 3 - Ruangguru -->
+            <div class="cert-card" onclick="openLightbox('assets/certificates/sertifikat3.jpg', 'Sertifikat Apresiasi - Ruangguru 2026')">
+                <div class="cert-img">
+                    <img src="images/certificate-01.jpeg" alt="Sertifikat Ruangguru 2026">
+                    <div class="cert-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Klik untuk perbesar</span>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-badge blue">Peserta</span>
+                    <h3>Kompetisi Sains Ruangguru 2026</h3>
+                    <p>Bidang Geografi • Jenjang SMA/Sederajat</p>
+                    <span class="cert-date">22 September 2026</span>
+                </div>
+            </div>
+
+            <!-- Sertifikat 4 - OLIMNAS Astronomi -->
+            <div class="cert-card" onclick="openLightbox('assets/certificates/sertifikat4.jpg', 'Peserta Aktif - OLIMNAS 2026')">
+                <div class="cert-img">
+                    <img src="images/certificate-5.jpeg" alt="Sertifikat OLIMNAS 2026">
+                    <div class="cert-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Klik untuk perbesar</span>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-badge blue">Peserta Aktif</span>
+                    <h3>Olimpiade Sains Nasional (OLIMNAS) 2026</h3>
+                    <p>Bidang Astronomi Dasar</p>
+                    <span class="cert-date">18 Januari 2026 • Yogyakarta</span>
+                </div>
+            </div>
+
+            <!-- Sertifikat 5 - PESONA -->
+            <div class="cert-card" onclick="openLightbox('assets/certificates/sertifikat5.jpg', 'Peserta Aktif - PESONA 2026')">
+                <div class="cert-img">
+                    <img src="images/certificate-4.jpeg" alt="Sertifikat PESONA 2026">
+                    <div class="cert-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Klik untuk perbesar</span>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-badge blue">Peserta Aktif</span>
+                    <h3>Pekan Sains & Olimpiade Nasional (PESONA) 2026</h3>
+                    <p>Bidang IPS</p>
+                    <span class="cert-date">11 Januari 2026 • Yogyakarta</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Sertifikat">
+    <p id="lightbox-caption"></p>
+</div>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>Tertarik berdiskusi atau ingin tahu lebih lanjut tentang proyek saya? Silakan hubungi melalui form di samping atau media sosial berikut:</p>
+                    <div class="social-links">
+                        <a href="@_anggrainirahmatia"><i class="fab fa-instagram"></i></a>
+                        <a href="089626129500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="rahmatiaanggraini833-beep"><i class="fab fa-github"></i></a>
+                        <a href="Rahmatia:rahmatiaanggraini833@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Gmail" required>
+                    <textarea name="message" rows="5" placeholder="Pesan kamu..." required></textarea>
+                    <button type="submit" class="btn primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Rahmatia A.. Dibuat dengan semangat belajar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
